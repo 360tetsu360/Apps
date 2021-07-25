@@ -1,0 +1,189 @@
+*{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'THE_JACATRA';
+    src: url('./font/RictyDiminished-Regular.ttf')
+}
+body{
+    text-align: center;
+}
+.header{
+    color: white;
+    position: relative;
+    display:flex;
+}
+.text{
+    background-color: #1C1C1C;
+    width: 40%;
+}
+.canvas{
+    background-color: #202020;
+    overflow-y: hidden;
+    width: 60%;
+}
+.headertx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: auto;
+    float: none;
+}
+.title{
+    width: max-content;
+    height: max-content;
+    font-family: "THE_JACATRA";
+    font-size: 60px;
+}
+
+#texture{
+    display: none;
+}
+
+.body{
+    background-color: #252525;
+    height: fit-content;
+}
+
+.box{
+    width: 300px;
+    flex: 300px;
+    height: 400px;
+    margin: 2.5%;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    max-width: 300px;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.container .box input {
+    display: none;
+}
+.container .box label{
+    position: absolute;
+    top: 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+
+}
+.container .box input:checked ~ .face {
+    transition: 0.2s;
+    transform: translateY(-50%);
+    background-color: #1D1D1D;
+    color: rgb(255, 255, 255);
+}
+
+.container .box .face{
+    border: 2px solid #ff6347;
+    box-sizing: border-box;
+    background: #1D1D1D;
+    transition: 0.2s;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    color: rgb(105, 105, 105);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    font-family: "THE_JACATRA";
+}
+
+.container .box .face2{
+    z-index: 9;
+    transition: 0.2s;
+    position: absolute;
+    top: 25%;
+    background-color:coral;
+    width: 100%;
+    height: 50%;
+    font-family: "THE_JACATRA";
+    color: white;
+}
+.container .box .face2 p{
+    margin-top: 20px;
+    font-size: 20px;
+    height: min-content;
+}
+
+.container .box input:checked ~ .face2 {
+    transition: 0.2s;
+    transform: translateY(50%);
+    background: #33373a;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    background-color: #121212;
+}
+
+@media  (max-width:480px) {
+    .header{
+        color: white;
+        display:unset;
+        position: relative;
+    }
+    .text{
+        background-color: #1C1C1C;
+        width: 100%;
+        height: 30%;
+    }
+    .canvas{
+        background-color: #202020;
+        overflow-y: hidden;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.discord{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    margin-top: 25px;
+}
+
+.face2 a{
+    user-select: none; /* CSS3 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10かららしい */
+    transition: 0.5s;
+    margin: 15px 0 0;
+    display: inline-block;
+    height: min-content;
+    text-decoration: none;
+    font-weight: 900;
+    color: #03e9f4;
+    padding: 5px; 
+    width: max-content;
+    margin-top: 110px;
+}
+
+.face2 a:hover
+{
+    transition: 0.5s;
+    background: #03e9f4;
+    box-shadow: 0 0 0.5px #03e9f4,
+                0 0 2.5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 20px #03e9f4;
+    color: #fff;
+}
