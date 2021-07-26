@@ -45,7 +45,7 @@ body{
 
 .body{
     background-color: #252525;
-    height: fit-content;
+    height: max-content;
 }
 
 .box{
