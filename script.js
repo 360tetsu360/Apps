@@ -72,7 +72,11 @@ var ang = 30;
 
 function init() {
     var base = document.getElementById("viewport");
+    var image = document.getElementById("texture");
 
+    if(Math.round(Math.random() * 2) == 1){
+      image.src = "images/agent3.png";
+    }
 
     var width = base.clientWidth;
     var height = base.clientHeight;
