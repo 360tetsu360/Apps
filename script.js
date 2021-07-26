@@ -74,7 +74,7 @@ function init() {
     var base = document.getElementById("viewport");
     var image = document.getElementById("texture");
 
-    if(Math.round(Math.random() * 2) == 1){
+    if(Math.round(Math.random() * 3) == 1){
       image.src = "images/agent3.png";
     }
 
